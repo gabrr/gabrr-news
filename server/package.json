@@ -5,5 +5,22 @@
   "main": "server.ts",
   "repository": "github.com/gabrr/gabrr-news",
   "author": "gabrr",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "rimraf ./build && tsc",
+    "start": "yarn build && ts-node -r tsconfig-paths/register build/server.js",
+    "dev": "ts-node-dev --transpile-only -r tsconfig-paths/register src/server.ts"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/node": "^17.0.21",
+    "ts-node": "^10.6.0",
+    "ts-node-dev": "^1.1.8",
+    "tsconfig-paths": "^3.12.0",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0"
+  }
 }
