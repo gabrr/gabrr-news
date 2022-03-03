@@ -1,0 +1,9 @@
+{
+  "name": "graph-ql-server",
+  "version": "1.0.0",
+  "description": "API for gabrr news app",
+  "main": "server.ts",
+  "repository": "github.com/gabrr/gabrr-news",
+  "author": "gabrr",
+  "license": "MIT"
+}
