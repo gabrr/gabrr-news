@@ -1,0 +1,7 @@
+module.exports = `
+	type Post {
+		userId: ID!
+		title: String
+		description: String
+	}
+`

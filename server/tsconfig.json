@@ -23,6 +23,8 @@
     /* Type Checking */
     "strict": true,                                      /* Enable all strict type-checking options. */
     "noImplicitAny": true,                               /* Enable error reporting for expressions and declarations with an implied `any` type.. */
+		"typeRoots": ["node_modules/@types", "src/@types"],
+		"allowSyntheticDefaultImports": true,
 
     /* Completeness */
     "skipLibCheck": true,                                 /* Skip type checking all .d.ts files. */
@@ -31,5 +33,6 @@
 		}
   },
 	"exclude": ["node_modules", "build"],
-	"include": ["src"]
+	"include": ["src", "src/@types"],
+	"files": ["src/@types/graphql.d.ts"],
 }
