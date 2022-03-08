@@ -2,7 +2,10 @@ import { database } from "mock";
 
 export const userResolvers = {
 	query: {
-		users: () => database.users
+		users: () => {
+			console.log("called")
+			return database.users
+		}
 	},
 
 	mutation: {

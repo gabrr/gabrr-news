@@ -1,10 +1,6 @@
 import { ApolloServer } from 'apollo-server';
-import { resolvers } from 'documents/graphql/resolvers';
-import typeDefs from "documents/graphql/queries";
+import startServer, { serverConfig } from 'setup/startSetup';
 
+const server = new ApolloServer(serverConfig);
 
-const server = new ApolloServer({ typeDefs, resolvers });
-
-server.listen().then(({ url }) => {
-  console.log(`🚀  Server ready at ${url}`);
-});
+startServer(server)

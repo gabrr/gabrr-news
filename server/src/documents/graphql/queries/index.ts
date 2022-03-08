@@ -2,7 +2,7 @@ import { gql } from "apollo-server";
 import Post from "documents/graphql/subjects/post/post.graphql";
 import User from "documents/graphql/subjects/user/user.graphql";
 
-export default gql`
+export const typeDefs = gql`
 	${Post}
 	${User}
 
